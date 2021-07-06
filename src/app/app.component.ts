@@ -15,8 +15,8 @@ export class AppComponent {
   ingresos:Ingreso[]=[];
   egresos:Egreso[]=[];
 
+  //traemos la info del servicio
   constructor(
-    //traemos la info del servicio
     private ingresoServicio:IngresoServicio,
     private egresoServicio:EgresoServicios
     ){
@@ -34,7 +34,7 @@ export class AppComponent {
         /* x cada ingreso dentro del array 'ingresos'
         sumamos el valor a la variable ingreso total
          */
-        ingresoTotal =+ ingreso.valor;
+        ingresoTotal += ingreso.valor;
       })
       return ingresoTotal;
     };
@@ -54,7 +54,7 @@ export class AppComponent {
 
     //metodo para obtener el porcentaje
     getPorcentajeTotal(){
-      return this.getEgresoTotal() / this.getIngresoTotal();
+      return this.getEgresoTotal()/this.getIngresoTotal();
     }
 
     //presupuesto total

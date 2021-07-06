@@ -6,7 +6,7 @@ export class IngresoServicio{
   ingresos:Ingreso[]=[
     //acá usamos el model.ts:
     new Ingreso('Salario',4000),
-    new Ingreso('Venta de Coche', 4500)
+    new Ingreso('Venta de Coche',500)
   ];
 
   //eliminar 1 registro
