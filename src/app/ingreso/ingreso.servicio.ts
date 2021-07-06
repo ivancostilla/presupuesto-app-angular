@@ -8,4 +8,13 @@ export class IngresoServicio{
     new Ingreso('Salario',4000),
     new Ingreso('Venta de Coche', 4500)
   ];
+
+  //eliminar 1 registro
+  eliminar(ingreso:Ingreso){
+    //obtenemos el indice del ingreso dentro del array
+    const indice: number = this.ingresos.indexOf(ingreso);
+
+    //eliminamos ese ingreso
+    this.ingresos.splice(indice,1);
+  }
 }
